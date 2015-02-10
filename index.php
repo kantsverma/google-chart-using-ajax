@@ -13,7 +13,7 @@
       
     function drawChart() {
       var jsonData = $.ajax({
-          url: "getPieChart.php",
+          url: "chart-ajax.php",
           type: 'post',
           data: {formType:1},
           dataType:"json",
@@ -32,7 +32,7 @@
       //alert(id);
       if(id){
          var jsonData = $.ajax({
-          url: "getPieChart.php",
+          url: "chart-ajax.php",
           type: 'post',
           data: {formType:id},
           dataType:"json",
